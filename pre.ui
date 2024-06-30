@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pre</class>
+ <widget class="QWidget" name="pre">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>nmsl</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#pre{
+   border-image: url(:/pic2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+     qproperty-alignment: 'AlignCenter';
+    padding: 10px;
+}</string>
+     </property>
+     <property name="text">
+      <string>请先调整疾病参数。调整完毕,按&quot;NEXT&quot;开始。</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="name_input">
+     <property name="text">
+      <string>Disease name</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>786</width>
+        <height>442</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="unfold">
+     <property name="text">
+      <string>modify the parameters</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="nexti">
+     <property name="font">
+      <font>
+       <family>幼圆</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { 
+ background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 blue, stop:1 white);
+    border: 1px solid #8f8f91;
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
+
+QPushButton:pressed {
+    background-color: #dcdcdc;
+}
+
+QPushButton:checked {
+    background-color: #a0a0a0;
+}
+
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 darkred, stop:1 lightgray);
+}</string>
+     </property>
+     <property name="text">
+      <string>NEXT</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>unfold</tabstop>
+  <tabstop>scrollArea</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
