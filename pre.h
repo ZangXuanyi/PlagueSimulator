@@ -7,6 +7,8 @@
 #include <QLabel>
 #include <QDoubleSpinBox>
 
+// only a test
+
 namespace Ui {
 class pre;
 }
